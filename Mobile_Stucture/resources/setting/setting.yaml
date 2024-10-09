@@ -1,0 +1,9 @@
+setup:
+  wait_time:  10
+  item_count_checker: 1
+  remote_url: http://localhost:4723/wd/hub    
+  deviceName: TestDevice    
+  platformVersion:  11.0    
+  platformName: Android    
+  appPackage: com.saucelabs.mydemoapp.android    
+  appActivity:  com.saucelabs.mydemoapp.android.view.activities.SplashActivity
