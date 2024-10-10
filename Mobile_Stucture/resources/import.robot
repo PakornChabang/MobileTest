@@ -2,11 +2,11 @@
 Library    AppiumLibrary
 
 #locator
-Resource    ${CURDIR}/locator/home_locator.robot 
-Resource    ${CURDIR}/locator/cart_locator.robot 
+Resource    ${CURDIR}/locator/${platform}/home_locator.robot 
+Resource    ${CURDIR}/locator/${platform}/cart_locator.robot 
 
 #setting
-Variables    ${CURDIR}/setting/setting.yaml
+Variables    ${CURDIR}/setting/${platform}.yaml
 
 #common
 resource    ${CURDIR}/../keywords/common/common.robot

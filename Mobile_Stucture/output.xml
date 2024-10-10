@@ -26,7 +26,7 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
 <msg time="2024-10-09T13:11:38.758965" level="INFO">xpath criteria: (//android.widget.ImageView[@content-desc="Product Image"])[1]</msg>
 <arg>${locator}</arg>
-<arg>${setup.wait_time}</arg>
+<arg>${device_setup.wait_time}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <status status="PASS" start="2024-10-09T13:11:37.139124" elapsed="1.620831"/>
 </kw>
@@ -48,7 +48,7 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 <msg time="2024-10-09T13:11:40.249303" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cartBt
 criteria is com.saucelabs.mydemoapp.android:id/cartBt</msg>
 <arg>${locator}</arg>
-<arg>${setup.wait_time}</arg>
+<arg>${device_setup.wait_time}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <status status="PASS" start="2024-10-09T13:11:39.296313" elapsed="0.952990"/>
 </kw>
@@ -70,7 +70,7 @@ criteria is com.saucelabs.mydemoapp.android:id/cartBt</msg>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
 <msg time="2024-10-09T13:11:41.083731" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cartIV</msg>
 <arg>${locator}</arg>
-<arg>${setup.wait_time}</arg>
+<arg>${device_setup.wait_time}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <status status="PASS" start="2024-10-09T13:11:40.465259" elapsed="0.618472"/>
 </kw>
@@ -90,7 +90,7 @@ criteria is com.saucelabs.mydemoapp.android:id/cartBt</msg>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
 <msg time="2024-10-09T13:11:42.237994" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/noTV"]</msg>
 <arg>${cart_locator.display_items_count}</arg>
-<arg>${setup.wait_time}</arg>
+<arg>${device_setup.wait_time}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <status status="PASS" start="2024-10-09T13:11:41.380785" elapsed="0.857209"/>
 </kw>
@@ -113,7 +113,7 @@ criteria is com.saucelabs.mydemoapp.android:id/cartBt</msg>
 &lt;class 'str'&gt;
 &lt;class 'int'&gt;</msg>
 <arg>${item_count}</arg>
-<arg>${setup.item_count_checker}</arg>
+<arg>${device_setup.item_count_checker}</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
 <status status="PASS" start="2024-10-09T13:11:42.321877" elapsed="0.001000"/>
 </kw>

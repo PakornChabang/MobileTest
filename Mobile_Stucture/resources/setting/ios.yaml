@@ -1,0 +1,10 @@
+device_setup:
+  wait_time:  10
+  item_count_checker: 1
+  device_name: "iPhone 16 Pro"
+  platform_name: "iOS"
+  platform_version: "18.0"
+  automation_name: "XCUITest"
+  bundle_id: "com.saucelabs.mydemoapp.rn"
+  remote_url: "http://localhost:4723/wd/hub"
+  automation: "XCUItest" 
