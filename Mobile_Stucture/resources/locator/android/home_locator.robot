@@ -1,2 +1,2 @@
 *** Variables ***
-${home_locator.product}    xpath=(//android.widget.ImageView[@content-desc="Product Image"])[1]
+${home_locator.product}    xpath=//android.widget.TextView[@content-desc="Product Title" and @text="%&product&%"]

@@ -1,2 +1,2 @@
 *** Variables ***
-${home_locator.product}    xpath=//XCUIElementTypeOther[@name="Sauce Labs Backpack"]
+${home_locator.product}    xpath=///XCUIElementTypeStaticText[@name="store item text" and @label="%&product&%"]

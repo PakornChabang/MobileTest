@@ -8,5 +8,5 @@ Tap to open cart
 Check items in cart
     AppiumLibrary.wait until page contains element    ${cart_locator.display_items_count}    ${device_setup.wait_time}
     ${item_count}=    AppiumLibrary.get text    ${cart_locator.display_items_count}
-    log to console    Current item count is: ${item_count}
-    should be equal as numbers    ${item_count}    ${device_setup.item_count_checker}
+    builtIn.log to console    Current item count is: ${item_count}
+    builtIn.Should be equal as numbers    ${item_count}    ${test01.item_count_checker}
