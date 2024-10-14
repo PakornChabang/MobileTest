@@ -1,5 +1,3 @@
-*** Settings ***
-Library    AppiumLibrary
 *** Keywords ***
 Open test application
     BuiltIn.Run Keyword If    '${platform}' == 'android'    Open android application
