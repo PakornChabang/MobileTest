@@ -1,5 +1,4 @@
 device_setup:
-  wait_time:  10
   device_name: "iPhone 16 Pro"
   platform_name: "iOS"
   platform_version: "18.0"
@@ -7,8 +6,10 @@ device_setup:
   bundle_id: "com.saucelabs.mydemoapp.rn"
   remote_url: "http://localhost:4723/wd/hub"
   automation: "XCUItest" 
+setup:
   x_begin:  100
   y_begin:  500
   x_end:  100
   y_end:  100
   press_time:  500
+  wait_time:  10

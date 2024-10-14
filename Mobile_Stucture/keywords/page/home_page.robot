@@ -19,5 +19,5 @@ Tap product
     ${x}=    BuiltIn.Set variable    ${location['x']}
     ${y}=    BuiltIn.Set variable    ${location['y']}
     BuiltIn.Run keyword if    '${platform}' == 'android'    
-    ...    AppiumLibrary.Click a point        ${x+100}    ${y-100}    ${device_setup.press_time}
+    ...    AppiumLibrary.Click a point        ${x+100}    ${y-100}    ${setup.press_time}
     ...    ELSE    AppiumLibrary.Click element    ${locator}

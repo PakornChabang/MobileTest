@@ -6,6 +6,8 @@ device_setup:
   app_package: com.saucelabs.mydemoapp.android
   app_activity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
   remote_url: "http://localhost:4723/wd/hub"
+setup:
+  wait_time:  10  
   x_begin:  100
   y_begin:  500
   x_end:  100
