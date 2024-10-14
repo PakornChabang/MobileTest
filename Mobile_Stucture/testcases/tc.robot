@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ${CURDIR}/../resources/import.robot
 Test Setup    common.Open test application
-Test Teardown    AppiumLibrary.Close application
+Test Teardown    common.Close app
 *** Test Cases ***
 Add product and check item in cart
     home_feature.Scroll to product and tap    ${test01.product_name}
