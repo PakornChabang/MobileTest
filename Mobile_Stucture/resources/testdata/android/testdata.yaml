@@ -1,6 +1,6 @@
 test01:
   product_name: Sauce Labs Backpack (yellow)
-  item_count_checker: 1
+  item_count_checker: 1 Items
 test02:
-  product_name: "10"
-  item_count_checker: 5
+  product_name: Sauce Labs Backpack 
+  item_count_checker: 1 Items

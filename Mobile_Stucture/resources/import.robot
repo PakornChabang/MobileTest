@@ -10,6 +10,7 @@ Resource    ${CURDIR}/locator/${platform}/cart_locator.robot
 #setting
 Variables    ${CURDIR}/setting/${platform}.yaml
 Variables    ${CURDIR}/testdata/${platform}/testdata.yaml
+Variables    ${CURDIR}/setting/setting.yaml
 
 #common
 resource    ${CURDIR}/../keywords/common/common.robot

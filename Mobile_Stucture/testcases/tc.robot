@@ -7,3 +7,4 @@ Add product and check item in cart
     home_feature.Scroll to product and tap    ${test01.product_name}
     cart_page.Tap add to cart button
     cart_feature.Open cart and check items
+    cart_feature.Clear cart

@@ -1,10 +1,10 @@
 *** Keywords ***
 Open test application
-    Run Keyword If    '${platform}' == 'android'    Open android application
+    BuiltIn.Run Keyword If    '${platform}' == 'android'    Open android application
     ...    ELSE    Open ios application
 
 Open android application
-    AppiumLibrary.Open Application    ${device_setup.remote_url}  
+    AppiumLibrary.Open application    ${device_setup.remote_url}  
     ...    deviceName=${device_setup.device_name}    
     ...    platformVersion=${device_setup.platform_version}    
     ...    platformName=${device_setup.platform_name}   
@@ -12,14 +12,22 @@ Open android application
     ...    appActivity=${device_setup.app_activity}
 
 Open ios application
-    ${capability}=    Create Dictionary    automation=${device_setup.automation}    
+    ${capability}=    BuiltIn.Create dictionary    automation=${device_setup.automation}    
     ...    platformName=${device_setup.platform_name}    
     ...    platformVersion=${device_setup.platform_version}   
     ...    bundleId=${device_setup.bundle_id}    
     ...    deviceName=${device_setup.device_name}
-    AppiumLibrary.Open Application    ${device_setup.remote_url}    &{capability}
+    AppiumLibrary.Open application    ${device_setup.remote_url}    &{capability}
  
 Wait and tap when visible
     [Arguments]    ${locator}
-    AppiumLibrary.wait until page contains element    ${locator}    ${device_setup.wait_time}
-    AppiumLibrary.click element    ${locator}
+    AppiumLibrary.Wait until page contains element    ${locator}    ${device_setup.wait_time}
+    AppiumLibrary.Click element    ${locator}
+
+Is visible
+    [Arguments]    ${locator}
+    ${result}=    BuiltIn.Run keyword and return status    AppiumLibrary.Element should be visible    ${locator}
+    RETURN    ${result}  
+
+Flick down
+    AppiumLibrary.Flick    ${setup.x_begin}    ${setup.y_begin}    ${setup.x_end}    ${setup.y_end}

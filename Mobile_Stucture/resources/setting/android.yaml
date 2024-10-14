@@ -1,6 +1,5 @@
 device_setup:
   wait_time:  10
-  item_count_checker: 1
   device_name: TestDevice
   platform_name: Android
   platform_version: "11.0"
