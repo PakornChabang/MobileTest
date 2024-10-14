@@ -1,6 +1,0 @@
-setup:
-  x_begin:  100
-  y_begin:  500
-  x_end:  100
-  y_end:  100
-  press_time:  500
