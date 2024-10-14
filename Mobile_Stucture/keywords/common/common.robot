@@ -1,8 +1,8 @@
 *** Keywords ***
 Open test application
     BuiltIn.Run Keyword If    '${platform}' == 'android'    Open android application
-    ...    ELSE If    '${platform}' == 'ios'        Open ios application
-
+    ...    ELSE IF    '${platform}' == 'ios'    Open iOS Application
+    ...    ELSE    Log    Unsupported platform: ${platform}
 Open android application
     AppiumLibrary.Open application    ${device_setup.remote_url}  
     ...    deviceName=${device_setup.device_name}    
