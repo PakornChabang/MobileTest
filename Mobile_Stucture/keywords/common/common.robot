@@ -31,3 +31,6 @@ Is visible
 
 Flick down
     AppiumLibrary.Flick    ${setup.x_begin}    ${setup.y_begin}    ${setup.x_end}    ${setup.y_end}
+
+Close app
+    AppiumLibrary.Close application
