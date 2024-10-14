@@ -1,5 +1,3 @@
-*** Settings ***
-Resource    ../common/common.robot
 *** Keywords ***
 Tap add to cart button
     common.Wait and tap when visible   ${cart_locator.add_to_cart_btn}

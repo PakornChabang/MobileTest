@@ -1,7 +1,7 @@
 *** Keywords ***
 Open test application
     BuiltIn.Run Keyword If    '${platform}' == 'android'    Open android application
-    ...    ELSE    Open ios application
+    ...    ELSE If    '${platform}' == 'ios'        Open ios application
 
 Open android application
     AppiumLibrary.Open application    ${device_setup.remote_url}  
@@ -30,4 +30,4 @@ Is visible
     RETURN    ${result}  
 
 Flick down
-    AppiumLibrary.Flick    ${setup.x_begin}    ${setup.y_begin}    ${setup.x_end}    ${setup.y_end}
+    AppiumLibrary.Flick    ${device_setup.x_begin}    ${device_setup.y_begin}    ${device_setup.x_end}    ${device_setup.y_end}

@@ -1,5 +1,3 @@
-*** Settings ***
-Resource    ../page/home_page.robot
 *** Keywords ***
 Scroll to product and tap
     [Arguments]    ${test01.product_name}

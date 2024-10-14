@@ -7,3 +7,8 @@ device_setup:
   bundle_id: "com.saucelabs.mydemoapp.rn"
   remote_url: "http://localhost:4723/wd/hub"
   automation: "XCUItest" 
+  x_begin:  100
+  y_begin:  500
+  x_end:  100
+  y_end:  100
+  press_time:  500
