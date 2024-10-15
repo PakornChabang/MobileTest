@@ -5,8 +5,8 @@ Scroll to product
     ...    %&product&%    ${test01.product_name}
     ${is_visible}=    common.Is visible    ${new_locator}   
     WHILE    not ${is_visible}
-        common.Flick down
-        ${is_visible}=    common.Is visible    ${new_locator}
+        BuiltIn.Run keyword if    not ${is_visible}    common.Flick down
+        ${is_visible}=    common.Is visible    ${new_locator} 
     END
 
 Tap product

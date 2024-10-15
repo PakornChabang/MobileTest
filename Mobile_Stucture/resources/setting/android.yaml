@@ -10,6 +10,6 @@ setup:
   wait_time:  10  
   x_begin:  100
   y_begin:  500
-  x_end:  100
-  y_end:  100
+  x_end:  300
+  y_end:  200
   press_time:  500
