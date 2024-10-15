@@ -4,3 +4,4 @@ ${cart_locator.cart_btn}               xpath=//XCUIElementTypeButton[@name="tab 
 ${cart_locator.display_items_count}     xpath=//XCUIElementTypeStaticText[@name="total number"]
 ${cart_locator.remove_item_btn}     xpath=//XCUIElementTypeOther[@name="remove item"]
 ${cart_locator.no_item}     xpath=//XCUIElementTypeStaticText[@name="No Items"]
+${cart_locator.shopping_btn}    xpath=//XCUIElementTypeOther[@name="Go Shopping button"]
