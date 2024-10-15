@@ -19,4 +19,3 @@ resource    ${CURDIR}/../keywords/page/cart_page.robot
 #feature
 Resource    ${CURDIR}/../keywords/feature/cart_feature.robot
 Resource    ${CURDIR}/../keywords/feature/home_feature.robot
-
