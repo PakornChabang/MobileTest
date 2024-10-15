@@ -4,9 +4,9 @@ Scroll to product
     ${new_locator}    String.Replace string    ${home_locator.product}    
     ...    %&product&%    ${test01.product_name}
     ${is_visible}=    common.Is visible    ${new_locator}   
-    WHILE    ${is_visible} == False
+    WHILE    not ${is_visible}
+        common.Flick down
         ${is_visible}=    common.Is visible    ${new_locator}
-        BuiltIn.Run Keyword If    ${is_visible} == False    common.Flick down
     END
 
 Tap product
